@@ -19,6 +19,13 @@
 	"mixins": [
 		"offlineplayerteleport.mixin.json"
 	],
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://haykam.com/links/discord"
+			}
+		}
+	},
 	"license": "MIT",
 	"icon": "assets/offlineplayerteleport/icon.png",
 	"depends": {
