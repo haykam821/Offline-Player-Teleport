@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/haykam821/Offline-Player-Teleport#readme",
-		"issues": "https://github.com/haykam821/Offline-Player-Teleport/issues"
+		"issues": "https://github.com/haykam821/Offline-Player-Teleport/issues",
+		"sources": "https://github.com/haykam821/Offline-Player-Teleport"
 	},
 	"entrypoints": {
 		"main": [
