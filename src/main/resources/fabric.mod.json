@@ -36,6 +36,7 @@
 		"fabric-dimensions-v1": "*",
 		"fabric-events-interaction-v0": "*",
 		"fabric-resource-loader-v0": "*",
+		"fabric-permissions-api-v0": "*",
 		"server_translations_api": "*"
 	}
 }

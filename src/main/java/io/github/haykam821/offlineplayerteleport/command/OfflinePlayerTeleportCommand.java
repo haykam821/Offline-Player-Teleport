@@ -11,6 +11,7 @@ import com.mojang.serialization.Dynamic;
 
 import io.github.haykam821.offlineplayerteleport.OfflinePlayerTeleport;
 import io.github.haykam821.offlineplayerteleport.mixin.MinecraftServerMixin;
+import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.fabricmc.fabric.api.dimension.v1.FabricDimensions;
 import net.fabricmc.fabric.api.entity.FakePlayer;
 import net.minecraft.command.argument.EntityArgumentType;
@@ -37,7 +38,7 @@ public final class OfflinePlayerTeleportCommand {
 
 	public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
 		dispatcher.register(CommandManager.literal(OfflinePlayerTeleport.MOD_ID)
-			.requires(source -> source.hasPermissionLevel(2))
+			.requires(Permissions.require("offlineplayerteleport.command", 2))
 			.then(CommandManager.argument("player", GameProfileArgumentType.gameProfile())
 				.executes(OfflinePlayerTeleportCommand::execute)));
 	}
